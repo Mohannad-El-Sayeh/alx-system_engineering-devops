@@ -1,0 +1,2 @@
+#!/bin/bash
+ls -a --file-type | awk -v d=", " '{s=(NR==1?s:s d)$0}END{print s}'
